@@ -1,0 +1,97 @@
+.section1{
+    background-image: url('/assets/images/wallpaper.gif');
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 130px;
+  
+
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
+    /* gap: 50px; */
+    padding-left: 5%;
+    padding-right: 5%;
+    
+}
+
+.s1d1{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.808);
+    border: 2px solid red;
+    margin-bottom: 50px;
+    border-radius: 30px;
+}
+
+.s1d1 p{
+    padding-bottom: 30px;
+}
+
+.s1d2{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.s1b{
+    display: flex;
+    padding: 0px;
+    gap: 5px;
+}
+
+
+/* Ensure the image stays inside its container and is responsive */
+.s1d2 img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+}
+
+/* Responsive Styles for Hero Section */
+@media (max-width: 992px) {
+    .section1 {
+        flex-direction: column-reverse; /* Puts text on top, image on bottom */
+        justify-content: center;
+        padding-top: 120px; /* Adjust based on your fixed header height */
+        gap: 0px;
+        text-align: center; /* Centers text for a cleaner mobile look */
+    }
+
+    .s1d1, .s1d2 {
+        width: 90%; /* Take full width on smaller screens */
+    }
+
+    .s1d1 {
+        margin-bottom: 20px;
+        padding: 20px;
+        align-items: center; /* Centers the buttons and text inside the box */
+    }
+
+    .s1b {
+        justify-content: center; /* Centers the buttons horizontally */
+        flex-wrap: wrap; /* Stack buttons if they are too wide */
+        gap: 15px;
+    }
+}
+
+/* Extra small screens (Phones) */
+@media (max-width: 480px) {
+    .section1 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .s1d1 h1 {
+        font-size: 1.8rem;
+    }
+    
+    .s1d1 h3 {
+        font-size: 1.1rem;
+    }
+}

@@ -1,0 +1,85 @@
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 50px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #0c0c0c;
+    border-bottom: 2px solid #ff0202;
+    position: fixed;
+    right: 0;
+    left:0;
+    top: 0;
+    z-index: 99;
+
+}
+
+.hdiv1{
+    width: 50%;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 10px; 
+    color: white;
+}
+
+.hdiv2{
+    width: 50%;
+    padding: 0px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+    color: white;
+}
+
+.hdiv2 a{
+    color: white;
+    text-decoration: none;
+
+}
+.hdiv2 a:hover{
+    color: red;
+}
+
+
+#logo{
+    width: 50px;
+}
+
+
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        height: auto; 
+    }
+
+    .hdiv1, .hdiv2 {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hdiv2 {
+        margin-top: 15px;
+        flex-wrap: wrap; 
+        gap: 15px;
+    }
+
+    .hdiv1 h2 {
+        font-size: 1.2rem;
+    }
+
+    .hdiv2 a {
+        font-size: 0.9rem;
+    }
+}

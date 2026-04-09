@@ -1,0 +1,96 @@
+.section2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 80px 5%;
+    background-image: url('/assets/images/wallpaper1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden; 
+}
+
+.s2d1 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.s2d1 img {
+    width: 50%;
+    height: auto;
+    display: block;
+}
+
+
+.s2d2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 30px;
+    border: 2px solid red;
+    border-radius: 30px;
+    box-sizing: border-box; 
+    color: white; 
+}
+
+
+.s2d2 h1, .s2d2 h3 {
+    margin-bottom: 10px;
+}
+
+.s2d2 p {
+    line-height: 1.6;
+}
+
+
+@media (max-width: 992px) {
+    .section2 {
+        flex-direction: column;
+        gap: 30px;
+        padding: 60px 5%;
+    }
+
+    .s2d1, .s2d2 {
+        width: 100%; 
+    }
+
+    .s2d1 img {
+        width: 70%; 
+        max-width: 300px; 
+    }
+
+    .s2d2 {
+        align-items: center; 
+        text-align: center;
+        padding: 25px;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+}
+
+
+@media (max-width: 480px) {
+    .section2 {
+        padding: 40px 15px;
+    }
+
+    .s2d2 h1 {
+        font-size: 1.6rem;
+    }
+
+    .s2d2 h3 {
+        font-size: 1.1rem;
+    }
+
+    .s2d2 p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+}

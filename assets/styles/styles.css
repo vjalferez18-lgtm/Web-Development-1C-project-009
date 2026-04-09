@@ -1,0 +1,44 @@
+
+
+
+@import 'header.css';
+@import 'section1.css';
+@import 'section2.css';
+@import 'section3.css';
+@import 'section4.css';
+@import 'buttons.css';
+@import 'footer.css';
+
+
+
+
+
+
+
+
+
+h1, h2, h3 {
+    font-family: 'JetBrains Mono', monospace;
+    
+
+}
+
+a{
+        font-family: 'JetBrains Mono', monospace;
+
+}
+
+p{
+    font-family: 'JetBrains Mono', monospace;
+}
+
+
+
+
+
+
+
+body{
+    padding: 0%;
+    margin: 0px;
+}
